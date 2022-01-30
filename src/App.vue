@@ -313,10 +313,10 @@
 
 <script>
 // Components
-import Background from "../components/background.vue";
-import Header from "../components/header.vue";
-import Welcome from "../components/welcome.vue";
-import Footer from "../components/footer.vue";
+import Background from "./components/background.vue";
+import Header from "./components/header.vue";
+import Welcome from "./components/welcome.vue";
+import Footer from "./components/footer.vue";
 
 // Materials
 import axios from "axios";

@@ -1,4 +1,3 @@
-
 <p align="center">
     <img src="src/assets/favicon.png">
 </p>
@@ -36,4 +35,3 @@ npm run-script dev
 ```
 
 The Vue application will be opened at your preferred browser.
-

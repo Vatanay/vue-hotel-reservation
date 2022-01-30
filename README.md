@@ -1,3 +1,8 @@
+
+<p align="center">
+    <img src="src/assets/favicon.png">
+</p>
+
 <h1 align="center">
   Summer Vibes
 </h1>
@@ -31,3 +36,4 @@ npm run-script dev
 ```
 
 The Vue application will be opened at your preferred browser.
+

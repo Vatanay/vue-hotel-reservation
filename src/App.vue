@@ -312,6 +312,9 @@
 </template>
 
 <script>
+// Config
+import config from "./config.js";
+
 // Components
 import Background from "./components/background.vue";
 import Header from "./components/header.vue";
@@ -431,7 +434,7 @@ export default {
     },
     useCoupon() {
       axios
-        .get("https://5f6d939160cf97001641b049.mockapi.io/tkn/coupons?code=" + this.coupon.code)
+        .get(config.API.coupon + this.coupon.code)
         .then((response) => {
           this.coupon.answer = response.data;
           if (Object.keys(this.coupon.answer).length === 0) {
@@ -475,7 +478,7 @@ export default {
       this.updateOrder("card_number", this.orderlist.card_number.replace(/\s/g, ""));
 
       axios
-        .post("https://5f6d939160cf97001641b049.mockapi.io/tkn/hotel-bookings", this.orderlist)
+        .post(config.API.hotel_bookings, this.orderlist)
         .then((response) => {
           console.info(response);
         })
@@ -492,12 +495,12 @@ export default {
   },
   async created() {
     axios
-      .get("https://5f6d939160cf97001641b049.mockapi.io/tkn/hotels")
+      .get(config.API.hotels)
       .then((response) => {
         this.hotels = response.data;
 
         axios
-          .get("https://5f6d939160cf97001641b049.mockapi.io/tkn/hotel-details")
+          .get(config.API.hotel_details)
           .then((response) => {
             this.hotel_details = response.data;
 

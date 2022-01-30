@@ -1,0 +1,57 @@
+body {
+  opacity: 0;
+  animation: intro 1s linear 1 forwards;
+  main {
+    z-index: 2;
+
+    .accordion-item {
+      border: 0;
+      box-shadow: rgb(108 105 108 / 10%) 0 2px 2px, rgb(108 105 108 / 10%) 0 4px 4px, rgb(108 105 108 / 10%) 0 8px 8px, rgb(108 105 108 / 10%) 0 16px 16px, rgb(108 105 108 / 10%) 0 32px 32px, rgb(108 105 108 / 10%) 0 64px 64px;
+    }
+
+    .feature-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 4rem;
+      height: 4rem;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: white;
+      border-radius: 0.75rem;
+    }
+
+    .bi {
+      vertical-align: -0.125em;
+      fill: currentColor;
+    }
+
+    #finder {
+      transition: opacity 1s;
+    }
+
+    .card-img-overlay {
+      background-color: rgba(1, 1, 1, 0.4);
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .jp-card.jp-card-identified {
+      box-shadow: none;
+    }
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

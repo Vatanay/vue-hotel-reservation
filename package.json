@@ -14,7 +14,7 @@
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.7.1",
     "card": "^2.5.4",
-    "moment": "^2.29.1",
+    "moment": ">=2.29.4",
     "superstatic": "^6.0.3",
     "vue": "^2.5.17",
     "vue-select": "^3.16.0",
